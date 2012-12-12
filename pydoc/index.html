@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to PySimpleMAC’s documentation! &mdash; PySimpleMAC 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PySimpleMAC 1.0 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">PySimpleMAC 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-pysimplemac-s-documentation">
+<h1>Welcome to PySimpleMAC&#8217;s documentation!<a class="headerlink" href="#welcome-to-pysimplemac-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>PySimpleMAC is an Open Source Computational Fluid Dynamics Solver. It employs Harlow&#8217;s <a class="reference external" href="http://pof.aip.org/resource/1/pfldas/v8/i12/p2182_s1?isAuthorized=no">Marker and Cell</a> discretization scheme to solve the non-dimensional form of the <a class="reference external" href="http://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations#Incompressible_flow_of_Newtonian_fluids">incompressible Navier-Stokes</a> equations.</p>
+<p>The original version of the code, known as <a class="reference external" href="https://github.com/jonkomperda/SimpleMAC">SimpleMAC</a> was written for a graduate Supercomputing course at University of Illinois at Chicago. It has since been expanded and ported to Python for this project, which is part of a graduate Python class.</p>
+<p>PySimpleMAC includes a GUI which produces a real time solution to the <a class="reference external" href="http://www.cfd-online.com/Wiki/Lid-driven_cavity_problem">Lid Driven Cavity</a> problem as a benchmark.</p>
+</div>
+<div class="section" id="getting-pysimplemac">
+<h2>Getting PySimpleMAC<a class="headerlink" href="#getting-pysimplemac" title="Permalink to this headline">¶</a></h2>
+<p>The source code may be downloaded as a tarball from the <a class="reference external" href="http://jonkomperda.github.com/PySimpleMAC/">main page</a>, however users are strongly encouraged to use Git and contribute to the project. To get the code using Git, you may simply enter the following in the terminal:</p>
+<div class="highlight-python"><pre>$ cd you_source_directory
+$ git clone https://github.com/jonkomperda/PySimpleMAC.git</pre>
+</div>
+<p>A great reference for using git may be found <a class="reference external" href="http://gitref.org/creating/">here</a></p>
+</div>
+<div class="section" id="using-pysimplemac">
+<h2>Using PySimpleMAC<a class="headerlink" href="#using-pysimplemac" title="Permalink to this headline">¶</a></h2>
+<p>In order to run the example included with PySimpleMAC you must have the following software/packages:</p>
+<ul>
+<li><p class="first">Compilers</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://gcc.gnu.org/wiki/GFortran">gfortran</a></li>
+<li><a class="reference external" href="http://www.open-mpi.org/">OpenMPI</a></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Python Packages</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://numpy.scipy.org/">Numpy</a></li>
+<li><a class="reference external" href="http://matplotlib.org/#">Matplotlib</a></li>
+<li><a class="reference external" href="http://mpi4py.scipy.org/docs/usrman/index.html">MPI4PY</a></li>
+<li><a class="reference external" href="http://code.google.com/p/pyvtk/">PyVTK</a></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Once all the dependancies are installed, simply navigate to the PySimpleMAC directory and execute the &#8216;Makefile&#8217; and run the example script:</p>
+<div class="highlight-python"><pre>$ cd PySimpleMAC
+$ make
+$ ./runGUIExample.py</pre>
+</div>
+</div>
+</div>
+<div class="section" id="pysimplemac-modules">
+<h1>PySimpleMAC Modules<a class="headerlink" href="#pysimplemac-modules" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the Python modules included in the project.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Fortran source is documented separately in the <a class="reference external" href="http://jonkomperda.github.com/PySimpleMAC/doxy/">developers guide</a></p>
+</div>
+<div class="section" id="module-includes">
+<span id="includes-module"></span><h2>includes module<a class="headerlink" href="#module-includes" title="Permalink to this headline">¶</a></h2>
+<p>This folder includes all wrapped source files.</p>
+</div>
+<div class="section" id="module-includes.macMethod">
+<span id="macmethod-module"></span><h2>macMethod module<a class="headerlink" href="#module-includes.macMethod" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="includes.macMethod.MACSolver">
+<em class="property">class </em><tt class="descclassname">includes.macMethod.</tt><tt class="descname">MACSolver</tt><big>(</big><em>fluid</em>, <em>domain</em>, <em>steps=5000</em><big>)</big><a class="headerlink" href="#includes.macMethod.MACSolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generalized Marker and Cell method solver for the incompressible Navier-Stokes equations.</p>
+<dl class="method">
+<dt id="includes.macMethod.MACSolver.reset">
+<tt class="descname">reset</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.macMethod.MACSolver.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets the solver to the initial condition state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.MACSolver.run">
+<tt class="descname">run</tt><big>(</big><em>pinterval=1000</em><big>)</big><a class="headerlink" href="#includes.macMethod.MACSolver.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the method as a &#8216;black box&#8217; for a predetermined number of steps, 
+set upon initialization of the solver. Prints using PyVTK at predetermined intervals.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.MACSolver.step">
+<tt class="descname">step</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.macMethod.MACSolver.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes a single computational step. Data may be accessed from the fluid class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.MACSolver.visitPrint">
+<tt class="descname">visitPrint</tt><big>(</big><em>k</em><big>)</big><a class="headerlink" href="#includes.macMethod.MACSolver.visitPrint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses PyVTK to write out data in a VisIt Visualization Tool capable format.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="includes.macMethod.domain">
+<em class="property">class </em><tt class="descclassname">includes.macMethod.</tt><tt class="descname">domain</tt><big>(</big><em>r=0.1</em><big>)</big><a class="headerlink" href="#includes.macMethod.domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines an object that behaves as a computatational domain.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="includes.macMethod.fluid">
+<em class="property">class </em><tt class="descclassname">includes.macMethod.</tt><tt class="descname">fluid</tt><big>(</big><em>domain</em>, <em>re=100</em><big>)</big><a class="headerlink" href="#includes.macMethod.fluid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a fluid object. Contains fluid parameters.</p>
+<dl class="method">
+<dt id="includes.macMethod.fluid.p">
+<tt class="descname">p</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.macMethod.fluid.p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the Fortran persistent data and returns the Pressure in the form of a Numpy array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.fluid.setRe">
+<tt class="descname">setRe</tt><big>(</big><em>re</em><big>)</big><a class="headerlink" href="#includes.macMethod.fluid.setRe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Reynolds number in real time for the Fortran program.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.fluid.u">
+<tt class="descname">u</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.macMethod.fluid.u" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the Fortran persistent data and returns U-Velocity in the form of a Numpy array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.fluid.v">
+<tt class="descname">v</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.macMethod.fluid.v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the Fortran persistent data and returns V-Velocity in the form of a Numpy array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.macMethod.fluid.w">
+<tt class="descname">w</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.macMethod.fluid.w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls a Fortran function to calculate Vorticity and returns it&#8217;s value in the form of a Numpy array.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-includes.sliderWindow">
+<span id="sliderwindow-module"></span><h2>sliderWindow module<a class="headerlink" href="#module-includes.sliderWindow" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="includes.sliderWindow.App">
+<em class="property">class </em><tt class="descclassname">includes.sliderWindow.</tt><tt class="descname">App</tt><big>(</big><em>master</em><big>)</big><a class="headerlink" href="#includes.sliderWindow.App" title="Permalink to this definition">¶</a></dt>
+<dd><p>The main GUI window which controls the plot window. Should be called from a separate 
+MPI process as the plot window.</p>
+<dl class="method">
+<dt id="includes.sliderWindow.App.quitIt">
+<tt class="descname">quitIt</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.quitIt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a quit message to both threads. Proper way to exit the program and ensure both
+threads recieve an exit message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.reset">
+<tt class="descname">reset</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends reset message to computational thread. Restores initial conditions to the solver.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.saveit">
+<tt class="descname">saveit</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.saveit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses a communicator to have computational thread save a jpeg</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.startRun">
+<tt class="descname">startRun</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.startRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tells the compute thread to begin computation. Should be called by a button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.stopRun">
+<tt class="descname">stopRun</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.stopRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tells the compute thread to end computation. Should be called by a button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.updateRe">
+<tt class="descname">updateRe</tt><big>(</big><em>master</em><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.updateRe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function which communicates with the computational thread to change the Reynolds number
+in the solver. Recieves value from slider and uses non-blocking send to main thread.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.viewP">
+<tt class="descname">viewP</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.viewP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets plot to display Pressure</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.viewU">
+<tt class="descname">viewU</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.viewU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets plot to display U-Velocity</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.viewV">
+<tt class="descname">viewV</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.viewV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets plot to display V-Velocity</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="includes.sliderWindow.App.viewW">
+<tt class="descname">viewW</tt><big>(</big><big>)</big><a class="headerlink" href="#includes.sliderWindow.App.viewW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets plot to display Vorticity</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to PySimpleMAC&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#getting-pysimplemac">Getting PySimpleMAC</a></li>
+<li><a class="reference internal" href="#using-pysimplemac">Using PySimpleMAC</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pysimplemac-modules">PySimpleMAC Modules</a><ul>
+<li><a class="reference internal" href="#module-includes">includes module</a></li>
+<li><a class="reference internal" href="#module-includes.macMethod">macMethod module</a></li>
+<li><a class="reference internal" href="#module-includes.sliderWindow">sliderWindow module</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">PySimpleMAC 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Jon Komperda.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

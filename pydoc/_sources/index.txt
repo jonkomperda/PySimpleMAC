@@ -1,0 +1,82 @@
+.. PySimpleMAC documentation master file, created by
+   sphinx-quickstart on Tue Dec 11 23:01:40 2012.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to PySimpleMAC's documentation!
+=======================================
+
+Introduction
+------------
+PySimpleMAC is an Open Source Computational Fluid Dynamics Solver. It employs Harlow's `Marker and Cell <http://pof.aip.org/resource/1/pfldas/v8/i12/p2182_s1?isAuthorized=no>`_ discretization scheme to solve the non-dimensional form of the `incompressible Navier-Stokes <http://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations#Incompressible_flow_of_Newtonian_fluids>`_ equations.
+
+The original version of the code, known as `SimpleMAC <https://github.com/jonkomperda/SimpleMAC>`_ was written for a graduate Supercomputing course at University of Illinois at Chicago. It has since been expanded and ported to Python for this project, which is part of a graduate Python class.
+
+PySimpleMAC includes a GUI which produces a real time solution to the `Lid Driven Cavity <http://www.cfd-online.com/Wiki/Lid-driven_cavity_problem>`_ problem as a benchmark.
+
+Getting PySimpleMAC
+-------------------
+The source code may be downloaded as a tarball from the `main page <http://jonkomperda.github.com/PySimpleMAC/>`_, however users are strongly encouraged to use Git and contribute to the project. To get the code using Git, you may simply enter the following in the terminal: ::
+
+    $ cd you_source_directory
+    $ git clone https://github.com/jonkomperda/PySimpleMAC.git
+
+A great reference for using git may be found `here <http://gitref.org/creating/>`_
+
+Using PySimpleMAC
+-----------------
+In order to run the example included with PySimpleMAC you must have the following software/packages:
+
+* Compilers
+
+    * `gfortran <http://gcc.gnu.org/wiki/GFortran>`_
+    * `OpenMPI <http://www.open-mpi.org/>`_
+
+* Python Packages
+
+    * `Numpy <http://numpy.scipy.org/>`_
+    * `Matplotlib <http://matplotlib.org/#>`_
+    * `MPI4PY <http://mpi4py.scipy.org/docs/usrman/index.html>`_
+    * `PyVTK <http://code.google.com/p/pyvtk/>`_
+
+Once all the dependancies are installed, simply navigate to the PySimpleMAC directory and execute the 'Makefile' and run the example script: ::
+
+    $ cd PySimpleMAC
+    $ make
+    $ ./runGUIExample.py
+
+PySimpleMAC Modules
+===================
+This section describes the Python modules included in the project.
+
+.. note::
+
+    The Fortran source is documented separately in the `developers guide <http://jonkomperda.github.com/PySimpleMAC/doxy/>`_
+    
+includes module
+---------------
+
+.. automodule:: includes
+    :members:
+
+macMethod module
+----------------
+
+.. automodule:: includes.macMethod
+    :members:
+
+sliderWindow module
+-------------------
+
+.. automodule:: includes.sliderWindow
+    :members:
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
