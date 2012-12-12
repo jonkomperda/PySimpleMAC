@@ -1,2 +1,8 @@
 
 .DS_Store
+
+includes/mac.so
+
+includes/macMethod.pyc
+
+includes/sliderWindow.pyc
