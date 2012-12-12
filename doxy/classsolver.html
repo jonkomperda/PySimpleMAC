@@ -148,7 +148,7 @@ Public Attributes</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>The MAC Method solver and it's persistent data. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00026">26</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00033">33</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 </div><hr/><h2>Member Function/Subroutine Documentation</h2>
 <a class="anchor" id="a7b41190881240b5ee89b0a9650e28d02"></a>
 <div class="memitem">
@@ -173,7 +173,7 @@ Public Attributes</h2></td></tr>
 \[ G_{i,j+\frac{1}{2}}^n = v_{i,j+\frac{1}{2}} + \Delta t \left [ \frac{v^n_{i+1,j+\frac{1}{2}} - 2v^n_{i,j+\frac{1}{2}} + v^n_{i-1,j+\frac{1}{2}}}{Re(\Delta x)^2} + \frac{v^n_{i,j+\frac{3}{2}} - 2v^n_{i,j+\frac{1}{2}} + u^n_{i,j-\frac{1}{2}}}{Re(\Delta y)^2} - \frac{(uv)^n_{i+\frac{1}{2},j+\frac{1}{2}} - (uv)^n_{i-\frac{1}{2},j-\frac{1}{2}}}{\Delta y} - \frac{(v^n_{i,j+1})^2 - (v^n_{i,j})^2}{\Delta y} \right ] \]
 </p>
  
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00190">190</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00197">197</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ Public Attributes</h2></td></tr>
 \[ Q^n_{i,j} = \frac{1}{\Delta t} \left [ \frac{F^n_{i+\frac{1}{2},j} - F^n_{i-\frac{1}{2},j}}{\Delta x} + \frac{G^n_{i,j+\frac{1}{2}} - G^n_{i,j-\frac{1}{2}}}{\Delta y} \right ]. \]
 </p>
  
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00228">228</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00235">235</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Public Attributes</h2></td></tr>
 </p>
 <p> We take the minimum of these two conditions to ensure stability. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00136">136</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00143">143</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Public Attributes</h2></td></tr>
 \[ v_{i+,j+\frac{1}{2} }^{n+1} = G_{i,j+\frac{1}{2} }^n - \frac{\Delta t}{\Delta x}(P_{i,j+1}^{n+1} - P_{i,j}^{n+1}) \]
 </p>
  
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00254">254</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00261">261</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Public Attributes</h2></td></tr>
 </p>
 <p> This mathematically states that a fluid element cannot pass through a wall. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00076">76</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00083">83</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ Public Attributes</h2></td></tr>
 
 <p>Initialize all variables with zero values. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00039">39</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00046">46</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ Public Attributes</h2></td></tr>
 \[v|_{L_x=1} = 0 \]
 </p>
  
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00107">107</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00114">114</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -358,7 +358,7 @@ Public Attributes</h2></td></tr>
 <p>Parallelized Poisson solver. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Parallel Poisson solver does not currently work due to F2Py bug with OpenMP barriers. Use the function <a class="el" href="classsolver.html#aa501a1adb02565bbd54a65bb74b0eb5e" title="Poisson solver for the pressure field.">poisson()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00366">366</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00373">373</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ Public Attributes</h2></td></tr>
 \[ P^{n+1}_{i,j} = \frac{1}{4} \left [ P^{n+1}_{i-1,j} + P^{n+1}_{i,j-1} + P^n_{i+1,j} + P^n_{i,j+1} - (\Delta x)^2 Q^n_{i,j}\right ] \]
 </p>
  
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00312">312</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00319">319</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00061">61</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00068">68</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -441,7 +441,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00049">49</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00056">56</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00055">55</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00062">62</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -491,7 +491,7 @@ Public Attributes</h2></td></tr>
 \[ \omega = \frac{1}{2} \nabla \times \bar U \]
 </p>
  
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00283">283</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00290">290</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Public Attributes</h2></td></tr>
 
 <p>See Harlow &amp; Welch 1965. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00032">32</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00039">39</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ Public Attributes</h2></td></tr>
 
 <p>See Harlow &amp; Welch 1965. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00033">33</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00040">40</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ Public Attributes</h2></td></tr>
 
 <p>Scalar pressure at cell center \( P_{i,j} \). </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00031">31</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00038">38</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pressure source term for Poisson. </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00034">34</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00041">41</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -572,7 +572,7 @@ Public Attributes</h2></td></tr>
 
 <p>Instantaneous velocity in x-direction, \( u_{i,j}^{n+1} \). </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00029">29</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00036">36</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ Public Attributes</h2></td></tr>
 
 <p>Instantaneous velocity in y-direction, \( v_{i,j}^{n+1} \). </p>
 
-<p>Definition at line <a class="el" href="mac_8f90_source.html#l00030">30</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
+<p>Definition at line <a class="el" href="mac_8f90_source.html#l00037">37</a> of file <a class="el" href="mac_8f90_source.html">mac.f90</a>.</p>
 
 </div>
 </div>
@@ -598,7 +598,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 11 2012 23:58:42 for Simple MAC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 12 2012 00:14:32 for Simple MAC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
