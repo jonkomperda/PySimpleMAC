@@ -16,7 +16,7 @@ PySimpleMAC includes a GUI which produces a real time solution to the `Lid Drive
 
 Getting PySimpleMAC
 -------------------
-The source code may be downloaded as a tarball from the `main page <http://jonkomperda.github.com/PySimpleMAC/>`_, however users are strongly encouraged to use Git and contribute to the project. To get the code using Git, you may simply enter the following in the terminal: ::
+The source code may be downloaded as a tarball from the `main page <../>`_, however users are strongly encouraged to use Git and contribute to the project. To get the code using Git, you may simply enter the following in the terminal: ::
 
     $ cd you_source_directory
     $ git clone https://github.com/jonkomperda/PySimpleMAC.git
@@ -51,7 +51,7 @@ This section describes the Python modules included in the project.
 
 .. note::
 
-    The Fortran source is documented separately in the `developers guide <http://jonkomperda.github.com/PySimpleMAC/doxy/>`_
+    The Fortran source is documented separately in the `developers guide <../doxy/>`_
     
 includes module
 ---------------
